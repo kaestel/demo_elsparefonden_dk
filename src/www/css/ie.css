@@ -1,0 +1,224 @@
+/*
+** Stylesheet with Internet Explorer-specific workarounds.
+*/
+
+/*  */
+
+* html #portal-columns {
+  width: 100%;
+}
+* html*#portal-columns {
+    width: auto;
+}
+
+input {
+    margin-bottom: 1px; /* bug fix */
+}
+
+table.listing td.top {
+    /* insane IE row bug workaround */
+    position: relative;
+    left: -1px;
+    top: -1px;
+}
+
+div#portal-columns div.portlet {
+    text-align: left;
+}
+div#portal-columns div#portal-column-one,
+div#portal-columns div#portal-column-two {
+    overflow: hidden;
+}
+
+textarea {
+    width: 97%;
+}
+
+.visualOverflow {
+    width: 88%;
+}
+
+.visualGhosted {
+    filter:alpha(opacity=20); 
+}
+
+#portal-logo {
+  height /**/: 57px;
+  overflow: hidden;
+}       
+
+/* Fix bottom margin on tabs in IE */
+#portal-globalnav li.selected a {
+position: relative;
+}
+
+#portal-colophon .colophonIcon {
+    height: 0px !important;
+    height /**/: 15px;
+}
+
+.actionMenu .actionMenuHeader a {
+    display: inline;
+}
+
+.actionMenu .actionMenuContent {
+    top: 1.4em;
+}
+
+/* Calendar fixes */
+.ploneCalendar { 
+    border-collapse:collapse;
+    width:auto; 
+    height:1%;
+}
+
+.ploneCalendar td { 
+    width:1%;
+}
+
+.ploneCalendar .todaynoevent,
+.ploneCalendar .todayevent {
+    position: relative;
+}
+
+
+.hiddenStructure { /* This is necessary to eliminate the 1px high object in
+                      the document flow in place of .hiddenStructure block objects */
+    position: absolute;
+}
+
+
+#floatholder, #float {
+    height: 1%;
+}
+
+/* Fix for IE float bug */
+* html .visualIEFloatFix,
+* html h1,
+* html h2,
+* html h3,
+/** html h4,*/
+* html h5,
+* html h6,
+* html dd,
+* html .documentDescription,
+* html .visualClear,
+* html .portalMessage,
+* html .portalWarningMessage,
+* html .portalStopMessage,
+* html .system-message,
+* html #error-handling,
+* html .documentContent {
+    height: 0.1%;
+}
+
+/* There appears to be a bug in some IE 6 versions that causes dashed borders
+   to get positioned strangely (i.e. out of the portlet in this case), and
+   to move about when scrolling.  May be related to:
+   http://mtiki.mmf.at/mt/archives/000011.html */
+
+dd.portletFooter {
+    border-top-style: solid;
+}
+
+/* Rounded corner workarounds for IE */
+* html .portletHeader {
+    height: 1%;
+}
+.portletTopRight, 
+.portletTopLeft {
+    top: 0px;
+}
+.portletTopRight,
+.portletTopLeft,
+.portletBottomRight,
+.portletBottomLeft {
+    font-size: 1px;
+}
+
+/* fixes for the drop down menus */
+
+* html #objectMenu.actionMenu .actionMenuContent li {
+    height: auto;
+}
+
+/* fixes for the ESF Table Less Design */
+
+
+#container {
+	height: 682px;
+}
+#mainNavSub li {
+	margin-left: 7px;
+}
+#mainNavSub li.search input.text {
+	width: 167px;
+}
+#content .publicationNavHead .fright {
+	margin-right: 7px;
+}
+#content .publicationNavHead .fleft {
+	margin-left: 7px;
+}
+#content div.checkbox p {
+	padding-left: 24px;
+}
+#searchResult ul ul {
+	margin-left: 7px;
+}
+#content .productSearchBox .search input.button,
+#content .productSearchBox .filter input.button {
+	margin: 0 7px 0 0;
+}
+#content .productAdvancedSearchBox .advancedSearch fieldset {
+	padding-bottom: 10px;
+}
+#content .productAdvancedSearchBox .advancedSearch .separator {
+	margin: 5px 0 5px;
+}
+
+#content .productCompareBox .innerBox {
+	float: left;
+	margin: 0 2px;
+}
+#content table.specsList th.max {
+	width: 20%;
+}
+#content .listOptionBottom .twoRows {
+	padding: 0;
+	margin: 0;
+}
+#content .listOptionBottom {
+	padding: 0;
+	margin: 0;
+}
+#content .listOptionBottom .threeRows {
+	padding: 0;
+	margin: 0;
+}
+.ie6hack {
+	padding-top: 0;
+	margin-right: 6px;
+}
+#content .toolBox {
+	overflow: hidden;
+	float: left;
+	display: inline;
+}
+#content .toolBox li {
+	float: left;
+}
+
+/* Klub1000 */
+.klub1000 #content .klub1000_special {
+	height: 214px;
+}
+.klub1000 #content .box .innerBox fieldset input.text {
+	width: 198px;
+	margin-left: 5px;
+}
+.klub1000 #content .box .innerBox fieldset input.button {
+	margin-right: 5px;
+}
+
+/*  */

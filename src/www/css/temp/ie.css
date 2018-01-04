@@ -1,0 +1,24 @@
+#container {
+	height: 682px;
+}
+#mainNavSub li {
+	margin-left: 7px;
+}
+#mainNavSub li.search input.text {
+	width: 167px;
+}
+#content .publicationNavHead .fright {
+	margin-right: 7px;
+}
+#content .publicationNavHead .fleft {
+	margin-left: 7px;
+}
+#content div.checkbox p {
+	padding-left: 24px;
+}
+#searchResult ul ul {
+	margin-left: 7px;
+}
+#content .productSearchBox .search input.button {
+	margin: 0 7px 0 0;
+}

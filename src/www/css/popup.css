@@ -1,0 +1,55 @@
+/* GENERAL CSS */
+@media all {
+
+	* {
+		font-family: Verdana;
+		color: #2D345E;
+	}
+	body {
+		text-align: left;
+		margin: 22px 28px 0;
+		background-color: #FFFFFF;
+		font-size: 0.7em;
+	}
+	form {
+		margin: 0;
+	}
+	img {
+		border: 0;
+	}
+
+	.column fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	.column fieldset label {
+		display: block;
+		font-size: 100%;
+		font-weight: bold;
+		padding: 0 0 3px;
+		margin: 0;
+	}
+
+	.column fieldset input.text,
+	.column fieldset select,
+	.column fieldset textarea {
+		display: block;
+		font-size: 109%;
+		margin: 0 0 11px;
+		padding: 2px 0 0 5px;
+		border: 1px solid #bec0d7;
+		height: 20px;
+		width: 300px;
+	}
+	.column fieldset textarea {
+		height: 75px;
+	}
+	.column fieldset input.button {
+		border: 0;
+	}
+
+	.error {
+		color: #FF0000;
+	}
+}
